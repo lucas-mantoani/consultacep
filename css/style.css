@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #003641;
+    --primary-color: #00a091;
+    --fonte: 'Asap', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte);
+}
+
+header {
+    background-color: var(--bg-color);
+    padding: 30px 0px;
+    width: 100%;
+}
+
+header>img {
+    max-height: 70px;
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    width: 80%;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    user-select: none;
+    color: var(--primary-color);
+}
+
+.inputbox {
+    margin: 5px 0px;
+}
+
+.inputbox label {
+    font-size: 20px;
+    color: var(--primary-color);
+    transition: .5s;
+    cursor: text;
+    margin: 0px;
+    width: 100%;
+}
+
+.inputbox input {
+    background-color: #f9f9f9;
+    border: solid 1px #d7d7d7;
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    height: auto;
+}
+
+
+.inputbox input:focus,
+.inputbox input:valid {
+    background: #f9f9f9;
+    border: solid 1px var(--primary-color);
+    color: #666;
+    height: auto;
+}
+
+
+.container button {
+    justify-self: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.container button:hover {
+    background: var(--bg-color);
+}
+
+.consultas {
+    background: #e0fffc;
+    width: 100%;
+}
+
+footer {
+    background: var(--bg-color);
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
